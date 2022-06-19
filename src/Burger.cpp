@@ -25,6 +25,6 @@ std::ostream &operator<<(std::ostream &os, const Burger &burger) {
     return os;
 }
 
-double Burger::totalPrice(double basePrice) const {
-    return 0;
+double Burger::totalPrice(double tax) const {
+    return price + price * tax;
 }

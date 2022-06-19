@@ -12,11 +12,9 @@
 
 class IFood {
 public:
-    virtual double totalPrice(double basePrice) const = 0;
+    virtual double totalPrice(double tax) const = 0;
 
-    virtual ~IFood() {
-
-    }
+    virtual ~IFood() = default;
 };
 
 

@@ -20,7 +20,7 @@ public:
 
     void setPrice(double price);
 
-    double totalPrice(double basePrice) const override;
+    double totalPrice(double tax) const override;
 
     friend std::ostream &operator<<(std::ostream &os, const Burger &burger);
 };
